@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+.content {
+    max-width: 1200px;
+    width: 100%;
+    margin: 30px auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card {
+    width: 30%;
+    /* border: 1px solid black; */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.card h3 {
+    color: blue;
+}
+
+.card h4 {
+    margin-top: 10px;
+}
+
+.card .delete {
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #dc3545;
+    /* Red color for delete button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.loading span {
+    display: inline-block;
+    animation: bounce 1.5s infinite;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Harflarni kechiktirib chiqish */
+.loading span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.loading span:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.loading span:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.loading span:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.loading span:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+.loading span:nth-child(6) {
+    animation-delay: 0.5s;
+}
